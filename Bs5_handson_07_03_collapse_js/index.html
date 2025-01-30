@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>PiyoCollapse</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="../images/logo.png">PiyoCollapse
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+
+		<div class="container pt-3">
+			<h1>折り畳み_JavaScript</h1>
+		</div>
+
+		<!-- リスト7-22 -->
+		<div class="container mt-5">
+			<p><a class="btn btn-primary toggle-btn" href="#" role="button">a要素によるボタン</a></p>
+			<div class="collapse">
+				表示と非表示が切り替わるコンテンツ
+			</div>
+			<!-- javascriptへ -->
+		</div>
+
+		<!-- リスト7-23 -->
+		<div class="container mt-5">
+			<div id="sample">
+				<p>
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseContent01" role="button" aria-expanded="false" aria-controls="collapseContent01">ボタン１</a>
+				</p>
+				<div class="collapse" id="collapseContent01" data-bs-parent="#sample">
+					<div class="card card-body">
+						コンテンツ1
+					</div>
+				</div>
+				<p>
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseContent02" role="button" aria-expanded="false" aria-controls="collapseContent02">ボタン２</a>
+				</p>
+				<div class="collapse" id="collapseContent02" data-bs-parent="#sample">
+					<div class="card card-body">
+						コンテンツ2
+					</div>
+				</div>
+				<p>
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseContent03" role="button" aria-expanded="false" aria-controls="collapseContent03">ボタン３</a>
+				</p>
+				<div class="collapse" id="collapseContent03" data-bs-parent="#sample">
+					<div class="card card-body">
+						コンテンツ3
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- リスト2-25 -->
+		 <div class="container">
+			<p>
+				<a class="btn btn-primary toggle-btn" data-bs-toggle="collapse" href="#sample" role="button">
+					表示する
+				</a>
+			</p>
+			<div class="collapse" id="sample">
+				表示と非表示が切り替わるコンテンツ
+			</div>
+		 </div>
+
+		<!-- リスト7-22, 7-23のJavaScriptは、main.jsに記述する事 -->
+
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="../libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="../libs/bootstrap/popper.min.js"></script>
+	<script src="../libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

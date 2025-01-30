@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<title>PiyoCarousel</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="../images/logo.png">PiyoCarousel
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+
+		<div class="container pt-3">
+			<h1>カルーセル</h1>
+			<!-- <div class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- リスト7-3をベースに、リスト7-11までコードを追加していく事 -->
+		<!-- <div class="container pt-3">
+			<div class="carousel" id="carouselControls" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+					</div>
+				</div>
+				コントローラー部分
+				前に戻るアイコン
+				<a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">前に戻る</span>
+				</a>
+				次に送るアイコン
+				<a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">次に送る</span>
+				</a>
+			</div>
+		</div> -->
+
+		<!-- <div class="container pt-3">
+			<div class="carousel slide" id="carouselIndicators" data-bs-ride="carousel">
+				インジケーター部分
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- <div class="container pt-3">
+			<div class="carousel slide" id="carouselIndicators" data-bs-ride="carousel">
+				インジケーター部分
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">前に戻る</span>
+			</a>
+			次に送るアイコン
+			<a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">次に送る</span>
+			</a>
+		</div> -->
+
+		<!-- <div class="container pt-3">
+			<div class="carousel slide carousel-fade" id="carouselIndicators" data-bs-ride="carousel">
+				インジケーター部分
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- <div class="container pt-3">
+			<div class="carousel slide carousel-fade" id="carouselIndicators" data-bs-ride="carousel">
+				インジケーター部分
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="500">
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item" data-bs-interval="500">
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item" data-bs-interval="300">
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- <div class="container pt-3">
+			<div class="carousel carousel-dark slide carousel-fade" id="carouselIndicators" data-bs-ride="carousel">
+				インジケーター部分
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+					<li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="500">
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item" data-bs-interval="500">
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+					<div class="carousel-item" data-bs-interval="300">
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>スライド見出し</h5>
+							<p>スライドのキャプション</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- リスト7-12から、リスト7-16までのJavaScriptは、main.jsに記述する事 -->
+
+		<!-- <div class="container pt-3">
+			<div class="carousel slide " id="carouselExample">
+				<div class="carousel-inner">
+					<div class="carousel-item active" >
+						<img class="d-block w-100" src="./images/logo_bootstrap.png" alt="First slide">
+						</div>
+					<div class="carousel-item" >
+						<img class="d-block w-100" src="./images/logo_css.png" alt="Second alide">
+						</div>
+					<div class="carousel-item" >
+						<img class="d-block w-100" src="./images/logo_javascript.png" alt="Third slide">
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="control-button my-3">
+			<input type="button" class="btn btn-primary start-slide" value="循環開始">
+			<input type="button" class="btn btn-primary pause-slide" value="循環停止">
+			<input type="button" class="btn btn-primary prev-slide" value="前へ循環">
+			<input type="button" class="btn btn-primary next-slide" value="次へ循環">
+			<input type="button" class="btn btn-primary slide-first" value="第1スライド">
+			<input type="button" class="btn btn-primary slide-second" value="第2スライド">
+			<input type="button" class="btn btn-primary slide-third" value="第3スライド">
+		</div> -->
+
+		<div class="container pt-3">
+			<div class="carousel" id="carouselControls" data-bs-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carouselControls" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#carouselControls" data-bs-slide-to="1"></li>
+					<li data-bs-target="#carouselControls" data-bs-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="../images/logo_bootstrap.png" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="../images/logo_css.png" alt="Second alide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="../images/logo_javascript.png" alt="Third slide">
+					</div>
+				</div>
+				コントローラー部分
+				前に戻るアイコン
+				<a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">前に戻る</span>
+				</a>
+				次に送るアイコン
+				<a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">次に送る</span>
+				</a>
+			</div>
+		</div>
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="../libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="../libs/bootstrap/popper.min.js"></script>
+	<script src="../libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
